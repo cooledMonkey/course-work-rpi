@@ -8,6 +8,11 @@
   
 }
 
+.base-content{
+    position: absolute;
+    width: 100vw;
+}
+
 .header {
     background-color: #98E598;
     padding-top: 5px;
@@ -34,6 +39,8 @@ body{
     grid-template-columns:  1fr 2.4fr;
     margin-left: 3%;
     margin-right: 3%;
+    position: absolute;
+    z-index: 1;
 }
 
 .upload_files__label{
@@ -227,4 +234,45 @@ body{
 .results__incorrect-file{
     background-color: #DAD795;
     color: #637000;
+}
+
+.preview{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+}
+
+.preview__background{
+    width: 600pt;
+    height: max-content;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    margin: 5pt;
+    padding: 25pt;
+    padding-top: 5pt;
+    background-size: cover;
+    list-style-type: none;
+    align-self: center;
+    text-wrap: wrap;
+}
+
+.preview__file-name{
+    color: #000000;
+    padding-left: 15pt;
+    padding-right: 15pt;
+    font-family: JetBrains Mono;
+    font-size: 13pt;
+    font-weight: 200;
+}
+
+.preview__file-content{
+    color: #505050;
+    font-family: JetBrains Mono;
+    font-size: 13pt;
+    font-weight: 200;
 }

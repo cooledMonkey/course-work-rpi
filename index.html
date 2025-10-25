@@ -6,21 +6,22 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-<header>
+<section class = "base-content">
+    <header>
     <div class="header">
         <h1 class="title">Проверка подписи</h1>
     </div>
 </header>
-    <div class="table-tasks">
-        <div class="upload_files">
+    <section class="table-tasks">
+        <section class="upload_files">
             <p class="upload_files__label">Загрузить файлы</p>
             <div class="upload_files__background">
                 <div class = "upload_files__placeholder">Или перетащить</div>
                 <button class = "upload_files__button">Выбрать файлы</button>
             </div>
-        </div>
+        </section>
 
-        <div class="results">
+        <section class="results">
             <p class="results__label">Результаты проверки</p>
             <ul class = "results__background">
                     <li class = "results__item">
@@ -36,7 +37,7 @@
                         <div class = "results__status results__incorrect-file">некорректный файл</div>
                     </li>
             </ul>
-        </div>
+        </section>
 
         <section class="uploaded_files">
             <p class="uploaded_files__label">Загруженные файлы</p>
@@ -48,6 +49,19 @@
                 <button class = "uploaded_files__button">Отправить на проверку</button>
             </div>
         </section>
-    </div>
+    </section>
+
 </body>
+</section>
+    <section class="preview">
+        <div class = "preview__background">
+            <p class = "preview__file-name">Файл: PRF_1234abcd.xml</p>
+            <p class = "preview__file-content"><ФИО><Фамилия>МОРОЗОВА <Имя>АНГЕЛИНА <Отчество>АЛЕКСАНДРОВНА 
+            <СНИЛС>156-923-517 90 <ДатаРождения>2004-07-14 2025-08-07 c6a6e57c-8bea-4ea4-be1b-a480677d1c00 
+            2025-08-07T17:50:54.849+03:00 dEr0dxxgGfBsg1ZNsknxMaia5mdkXjtj/LXBTqWI j0A=mCmgROms/eQ3KPLGYjMJFK
+            O53bwmBBm7WGy477ppTd0tcPinJvp/V7dOmN+gKI4p ZUpZKRPJBFGvDq/ +aeAquQ==MIIIvzCCCGygAwIBAgIRALQqQJ8yM
+            CaiqInA0Y9D7dkwCgYIKoUDBwEBAwIwggFh +aeAquQ==MIIIvzCCCGygAwIBAgIRALQqQJ8yMCaiqInA0Y9D7dkwCgYIKoU
+            DBwEBAwIwggFh MSAwHgYJKoZIhvcNAQkBFhF1Y19ma0Byb3NrYXpuYS5ydTEYMBYGA1UECAwPNzcg</p>
+        </div>
+    </section>
 </html>
