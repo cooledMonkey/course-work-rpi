@@ -6,10 +6,6 @@ function createTemplate() {
     return (
         `
         <ul class = "results__background">
-                <li  class = "results__item">
-                    <p class = "results__file-name">PRF_12345abcd.xml</p>
-                    <div class = "results__status results__incorrect-file">некорректный файл</div>
-                </li>
         </ul>
         `
       );

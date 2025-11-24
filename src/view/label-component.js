@@ -2,10 +2,10 @@ import { AbstractComponent } from '../framework/view/abstract-component.js';
 import {createElement} from '../framework/render.js'; 
 
 
-function createTemplate() {
+function createTemplate(text) {
     return (
         `
-            <p class="uploaded_files__label">Загруженные файлы</p>
+            <p class="uploaded_files__label">${text}</p>
         `
       );
 }
@@ -13,11 +13,12 @@ function createTemplate() {
 
 export default class LabelComponent extends AbstractComponent {
   #handleClick = null 
-  constructor(){
+  constructor({text}){
     super();
+    this.text = text;
   }
 
   get template(){
-        return createTemplate();
+        return createTemplate(this.text);
   }
 }
