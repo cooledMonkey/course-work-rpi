@@ -19,11 +19,13 @@ function createTemplate() {
 export default class UploadFilesComponent extends AbstractComponent {
   #handleClick = null 
   model = null;
-  constructor({onClick, model}){
+  files = [];
+  constructor({onClick, model, files}){
     super();
     this.#handleClick = onClick;
     this.element.addEventListener('click', this.#clickHandler);
     this.model = model;
+    this.files = files
   }
 
   get template(){

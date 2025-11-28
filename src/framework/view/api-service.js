@@ -6,12 +6,10 @@ export default class ApiService {
 
 
    async _load({
-     url,
-     method = 'GET',
-
-      body = null,
-     headers = new Headers(),
-   }) {
+    url,
+    method = 'GET',
+    body = null,
+    headers = new Headers(),}) {
      const response = await fetch(
        `${this._endPoint}/${url}`,
        { method, body, headers },

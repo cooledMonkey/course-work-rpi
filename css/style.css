@@ -267,8 +267,8 @@ body{
 }
 
 .preview__background{
-    width: 600pt;
-    height: max-content;
+    width: 700pt;
+    height: 300pt;
     border-radius: 10px;
     background-color: #D9D9D9;
     margin: 5pt;
@@ -279,6 +279,8 @@ body{
     align-self: center;
     text-wrap: wrap;
     position: relative;
+    overflow-y : auto;
+    overflow-x: hidden;
 }
 
 .popup__bg {
